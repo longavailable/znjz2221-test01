@@ -10,14 +10,14 @@ years = list(range(year0, year1)) # years 序列变量
 
 years = np.array(years)	# np.array()
 
-population = years * 1000 + np.random.randint(-100, 100) * 100
+builtupArea = years * 0.308 + np.random.randint(-100, 100) * 0.023
 
 # dictionary 映射/字典类型
 data = {
 	'year': years,
-	'population': population
+	'builtupArea': builtupArea
 }
 
 pdf = pd.DataFrame(data = data)
 
-pdf.to_csv('张德培-人口.csv', index=False)
+pdf.to_csv('builtupArea-张德培.csv', index=False)
